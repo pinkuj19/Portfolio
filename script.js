@@ -193,7 +193,7 @@ function createHeart(){
 
 }
 
-setInterval(createHeart,2500);
+setInterval(createHeart,800);
 
 
 // Hero Button Animation
