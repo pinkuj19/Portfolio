@@ -367,3 +367,78 @@ nav ul li a:hover{
     text-align:center;
     padding:15px;
 }
+/* FOOD SECTION */
+
+.food-section {
+    padding: 100px 10%;
+    background: #0d1117;
+    text-align: center;
+}
+
+.food-section .section-title {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.food-section .section-subtitle {
+    color: #9ca3af;
+    margin-bottom: 50px;
+    font-size: 1rem;
+}
+
+.food-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.food-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    cursor: pointer;
+    background: #161b22;
+    border: 1px solid rgba(59,130,246,0.2);
+    transition: 0.4s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(59,130,246,0.35);
+}
+
+.food-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.food-card:hover img {
+    transform: scale(1.08);
+}
+
+.food-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.95),
+        rgba(0,0,0,0)
+    );
+    text-align: left;
+}
+
+.food-overlay h3 {
+    color: #3b82f6;
+    margin-bottom: 5px;
+}
+
+.food-overlay p {
+    color: #fff;
+    font-size: 0.9rem;
+}
