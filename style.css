@@ -327,7 +327,7 @@ nav ul li a:hover{
         width:300px;
         height:380px;
     }
-    .photo-box img{
+.photo-box img{
     width:100%;
     height:100%;
     object-fit:cover;
