@@ -231,3 +231,54 @@ if(footerText){
     `© ${new Date().getFullYear()} Priyanka | Built with ♡`;
 
 }
+.gallery-btn{
+    margin-top:10px;
+    background:#ff7da5;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.gallery-btn:hover{
+    background:#ff5c92;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+}
+
+.modal-content{
+    background:white;
+    margin:5% auto;
+    padding:20px;
+    width:80%;
+    border-radius:20px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.modal-content img{
+    width:100%;
+    border-radius:15px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
