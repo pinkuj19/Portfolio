@@ -658,5 +658,5 @@ nav ul li a:hover{
 }
 
 .project-card:hover .project-image img{
-    transform:scale(1.05);
+    transform:scale(1.15);
 }
