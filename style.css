@@ -661,7 +661,7 @@ nav ul li a:hover{
     transform:scale(1.15);
 }
 .project-card{
-    transition:all 0.35s ease;
+    transition:all 0.55s ease;
 }
 
 .project-card:hover{
