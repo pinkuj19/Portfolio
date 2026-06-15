@@ -633,8 +633,8 @@ nav ul li a:hover{
     }
 }
 .project-card{
-    opacity:0;
-    transform:translateY(50px);
+    opacity:1;
+    transform:none;
 }
 
 .project-card.show{
