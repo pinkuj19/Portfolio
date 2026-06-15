@@ -501,3 +501,144 @@ nav ul li a:hover{
     font-size:40px;
     cursor:pointer;
 }
+/* PROJECTS */
+
+.projects-section{
+    padding:100px 10%;
+    background:#fff8fb;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#ff8fb1;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#666;
+    font-size:18px;
+}
+
+.projects-container{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+
+.project-card{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    border:2px solid #ffd5e2;
+    box-shadow:0 10px 30px rgba(255,182,193,0.15);
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 40px rgba(255,182,193,0.25);
+}
+
+.project-image{
+    flex:1;
+}
+
+.project-image img{
+    width:100%;
+    border-radius:20px;
+    border:2px solid #ffc5d8;
+}
+
+.project-content{
+    flex:1;
+}
+
+.project-content h3{
+    color:#333;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.project-content p{
+    color:#555;
+    line-height:1.8;
+}
+
+.insights{
+    margin-top:20px;
+}
+
+.insights h4{
+    color:#ff8fb1;
+    margin-bottom:10px;
+}
+
+.insights ul{
+    padding-left:20px;
+}
+
+.insights li{
+    margin-bottom:8px;
+    color:#555;
+}
+
+.tech-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.tech-stack span{
+    background:#ffe4ee;
+    color:#ff5f95;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:14px;
+}
+
+.project-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#ffb6c9;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.project-btn:hover{
+    background:#ff8fb1;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .project-card{
+        flex-direction:column;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+}
+.project-card{
+    opacity:0;
+    transform:translateY(50px);
+}
+
+.project-card.show{
+    opacity:1;
+    transform:translateY(0);
+    transition:all 0.8s ease;
+}
