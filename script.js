@@ -295,3 +295,56 @@ const observer = new IntersectionObserver((entries)=>{
 projectCards.forEach(card=>{
     observer.observe(card);
 });
+const galleries = {
+
+    italian: [
+        "images/food1.jpg",
+        "images/italian1.jpg",
+        "images/italian2.jpg",
+        "images/italian3.jpg"
+    ],
+
+    chaat: [
+        "images/food2.jpg",
+        "images/chaat1.jpg",
+        "images/chaat2.jpg",
+        "images/chaat3.jpg"
+    ],
+
+    dessert: [
+        "images/food3.jpg",
+        "images/dessert1.jpg",
+        "images/dessert2.jpg",
+        "images/dessert3.jpg"
+    ],
+
+    asian: [
+        "images/food4.jpg",
+        "images/asian1.jpg",
+        "images/asian2.jpg",
+        "images/asian3.jpg"
+    ]
+};
+
+function openGallery(type) {
+
+    const modal = document.getElementById("galleryModal");
+    const gallery = document.getElementById("galleryContent");
+
+    gallery.innerHTML = "";
+
+    galleries[type].forEach(image => {
+
+        const img = document.createElement("img");
+        img.src = image;
+
+        gallery.appendChild(img);
+    });
+
+    modal.style.display = "block";
+}
+
+function closeGallery() {
+
+    document.getElementById("galleryModal").style.display = "none";
+}
