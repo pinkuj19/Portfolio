@@ -308,28 +308,31 @@
 
         <h2 class="center">Send Me A Message</h2>
 
-        <form class="contact-form">
+        <form id="contact-form" class="contact-form">
 
-            <input
-                type="text"
-                placeholder="Your Good Name"
-                required
-            >
+                  <input
+                      type="text"
+                      name="from_name"
+                      placeholder="Your Good Name"
+                       required
+                      >
 
-            <input
-                type="email"
-                placeholder="Your Email"
-                required
-            >
+                <input
+                    type="email"
+                    name="from_email"
+                    placeholder="Your Email"
+                    required
+                    >
 
-            <textarea
-                placeholder="Your Message"
-                required
-            ></textarea>
+               <textarea
+               name="message"
+               placeholder="Your Message"
+               required
+              ></textarea>
 
-            <button type="submit">
-                Send with love
-            </button>
+             <button type="submit">
+                 Send with love
+             </button>
 
         </form>
 
